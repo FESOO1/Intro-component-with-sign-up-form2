@@ -19,7 +19,7 @@ body {
 /* MAIN */
 
 main {
-    padding: 80px 100px;
+    padding: 50px 100px;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -145,4 +145,81 @@ main {
 
 .main-right-bottom-inner-button:hover {
     background-color: hsl(154, 48%, 45%);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1600px) {
+    .main-left-header {
+        font-size: 4.5rem;
+        line-height: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding: 50px 50px;
+    }
+    .main-left-header {
+        font-size: 3.5rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-left-header {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        align-items: flex-start;
+        row-gap: 40px;
+        grid-template-columns: 1fr;
+    }
+    .main-left-header {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 53px;
+    }
+    .main-right {
+        align-items: center;
+    }
+    .main-right-top,
+    .main-right-bottom {
+        width: 600px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 50px 30px;
+    }
+    .main-left-header {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .main-right-top,
+    .main-right-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-right-bottom {
+        padding: 20px;
+    }
+    .main-right-top-paragraph {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
