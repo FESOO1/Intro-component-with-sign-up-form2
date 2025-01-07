@@ -19,7 +19,7 @@ body {
 /* MAIN */
 
 main {
-    padding: 40px 100px;
+    padding: 80px 100px;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -73,7 +73,7 @@ main {
 /* MAIN RIGHT BOTTOM */
 
 .main-right-bottom {
-    padding: 40px;
+    padding: 30px;
     background-color: white;
     border-radius: 0.8rem;
     box-shadow: 0 6px 0 rgba(0,0,0,0.2);
@@ -141,4 +141,8 @@ main {
     background-color: hsl(154, 59%, 51%);
     cursor: pointer;
     box-shadow: 0 3px 0 hsl(154, 59%, 36%);
+}
+
+.main-right-bottom-inner-button:hover {
+    background-color: hsl(154, 48%, 45%);
 }
